@@ -1,0 +1,758 @@
+body{
+    font-family: Inter , sans-serif;
+}
+.nav{
+    margin-top:41px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.service{
+    color: black;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+    margin-left: 40px;
+    text-decoration: none;
+    border-bottom: 2px solid #FF0000;
+    white-space: nowrap;
+}
+.nav-button {
+    text-decoration: none;
+    list-style: none; /* Remove bullet points */
+    margin-left: 90px;
+    margin-top:18px;
+    display: flex;
+    color: black;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.nav-button li{
+    margin-left: 30px;
+    
+}
+.nav-button li a{
+    text-decoration: none;
+    color: black;
+}
+.account{
+    text-decoration: none;
+    list-style: none; 
+    margin-left: 130px;
+    margin-top: 18px;
+   
+}
+.account a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.line{
+    
+    border-left: 3px solid #DAD8D8;
+    height: 22px;
+    margin-left: 220px;
+    margin-top: -25px; 
+    display: flex;
+}
+.phone{
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    display:flex;
+    margin-left: 240px;
+    margin-top: -20px;
+}
+.fa-phone{
+    margin-top:5px;
+    color: #B00000;
+}
+.group-button{
+    
+    list-style: none;
+    display: flex;
+    
+}
+.group-button a{
+    margin-right: 20px;
+    color: #D6D4D4E0;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.group-button li {
+    position: relative;
+}
+
+.group-button li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Initial color of the underline */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Initial scale to hide the underline */
+    transform-origin: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Change color and scale of the underline on link hover */
+.group-button li:hover::before {
+    background-color: #B00000; /* Change the color on hover */
+    transform: scaleX(1); /* Expand the underline on hover */
+}
+hr.underline {
+    width: 0;
+    height: 1px;
+    background-color: transparent; /* Initial color of the underline */
+    border: none;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Change color and width of the underline on button click */
+.group-button li.active hr.underline {
+    width: 100%; /* Expand the underline to 100% width when active */
+    background-color: #B00000; /* Change the color when active */
+}
+.group-button li a:hover + hr.underline {
+    background-color: #B00000;
+}
+.h1-text{
+    color: #2E2E2E;
+    font-size: 64px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 77.50px;
+    word-wrap: break-word;
+}
+.text-for-hosting{
+    color: #808080;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.80px;
+    word-wrap: break-word;
+}
+.account-btn{
+    padding: 12px; 
+    background: #B00000; 
+    box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.30); 
+    border-radius: 8px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+    color: white;
+    
+}
+
+.account-btn:hover{
+    color: black;
+    background: #808080;     
+} 
+.plan-btn{
+    padding: 12px; 
+    background: white; 
+    box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.30); 
+    border-radius: 8px; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    display: inline-flex;
+    color: black;
+    margin-left:20px;
+}
+.plan-btn:hover{
+    color: white;
+    background: #808080; 
+}
+.image-col{
+    position: relative;
+}
+.element1{
+    position: absolute;
+    top: 300px; /* Adjust the top position as needed */
+    left: -20px;
+}
+.element2{
+    position: absolute;
+    top: 65px; /* Adjust the top position as needed */
+    left: 480px;
+}
+.element3{
+    position: absolute;
+    top: 390px; /* Adjust the top position as needed */
+    left: 460px;
+    
+}
+.text-h2{
+    color: #18191F;
+    font-size: 48px;
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    line-height: 64px;
+    word-wrap: break-word;
+}
+.text p{
+    color: #18191F;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.group{
+    text-align:center;
+    margin:30px;
+}
+.group .head{
+    margin-top:5px;
+    color: black;
+    font-size: 20px;
+    font-family: Poppins !important;
+    font-weight: 700;
+    word-wrap: break-word;
+    
+}
+.group .body{
+    text-align: justify;
+    color: black;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+    
+}
+.lemon{
+    color: black;
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 60px;
+    word-wrap: break-word;
+    text-align: center;
+}
+.package{
+    color: black;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    text-align: center;
+}
+.monthly{
+    color: black;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    display:inline-block;
+    margin-left:130px;
+}
+.toggle-btn{
+    text-align: center;
+    display:inline-block;
+    background: #B00000; 
+    border-radius: 73px;
+    padding: 5px 50px 5px 5px;
+    margin-left: 20px;
+}
+.toggle-btn:hover{
+    text-align: center;
+    display:inline-block;
+    background: #f53d59; 
+    border-radius: 73px;
+    padding: 5px 50px 5px 5px;
+    margin-left: 20px;
+}
+.yearly{
+    color: black;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    display:inline-block;
+}
+.discount{
+    display:inline-block;
+    color: black;
+    font-size: 10px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 9px;
+    word-wrap: break-word;
+    text-align: center;
+    background: #FFE87A; 
+    border-radius: 8px;
+    padding:7px;
+}
+
+.link-button {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 40px;
+    word-wrap: break-word;
+    position: relative;
+    text-align: center;
+    display:inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.link-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform: scaleX(1); /* Initially, set the underline width to 0 */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+/* Hover effect: Red underline */
+.link-button:hover::before {
+    transform: scaleX(1); 
+    background-color: red;
+}
+.link-button:first-child::before {
+    transform: scaleX(1); 
+    background-color: red;
+}
+.card-body{
+   
+}
+.starter-head{
+    
+    color: black;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 25px;
+    word-wrap: break-word;
+    
+}
+
+
+.starter-p{
+   
+    color: black;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.starter-tk{
+    
+    color: black;
+    font-size: 42px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+.starter-month{
+    
+    color: black;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 14px;
+    word-wrap: break-word;
+}
+.starter-btn{
+    background: white; 
+    border-radius: 12px; 
+    border: 2px black solid;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+.starter-btn:hover{
+    border-color: red;
+}
+.starter-btn .text{
+    
+    color: black;
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 32px;
+    word-wrap: break-word;
+    text-align:center;
+   
+}
+
+.inline-block-container {
+    
+    margin-top: -16px;
+    
+}
+
+
+.img-text {
+    color: #808080;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-left:10px;
+} 
+.img-text2 {
+    color: #808080;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+    margin-left:10px;
+} 
+.card{
+    width: 100%;h
+    ight: 100%; 
+    background: white; 
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25) inset; 
+    border-radius: 15px; 
+    border: 1.50px #C4C4C4 solid;
+    height: 716px;
+    width: 299px;
+}
+/* .container-bg {
+
+    color: #F7FAFE;
+
+}
+
+ 
+
+button {
+
+    background-color: #B00000;
+
+    Width: 208px;
+
+    Top: 4256px;
+
+    Left: 616px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+ 
+
+}
+
+ 
+
+.bottomText p {
+
+    color: #FFFFFF;
+
+    display: flex;
+
+    margin-left: 50px;
+
+}
+
+ 
+
+.bottomText i {
+
+    font: Poppins-regular;
+
+    display: flex;
+
+    color: #FFFFFF;
+
+ 
+
+}
+
+ 
+
+.call {
+
+    justify-content: center;
+
+    margin-left: 550px;
+
+    margin-top: 20px;
+
+ 
+
+}
+
+ 
+
+.icon-call {
+
+    font-weight: 25px;
+
+    margin-left: 1px;
+
+}
+
+ 
+
+.btn-text {
+
+    color: white;
+
+    display: inline-flex;
+
+    height: 48px;
+
+    padding: 12px 16px 11px 10px;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    flex-shrink: 0;
+
+ 
+
+ 
+
+} */
+
+ 
+
+.head-text {
+
+    color: var(--text-title, #2E2E2E);
+
+    text-align: center;
+
+    font: Poppins-regular;
+
+    font-size: 64px;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    line-height: 88px;
+
+    margin-right: 235px;
+
+    margin-top: 100px;
+
+}
+
+ 
+
+.text .border {
+
+    width: 1272px;
+
+    height: 432px;
+
+    top: 3960px;
+
+    left: 75px;
+
+    background-color: #B00000;
+
+}
+
+ 
+
+.text-body {
+
+    width: 1024px;
+
+    height: 176px;
+
+    top: 4040px;
+
+    left: 208px;
+
+    text-align: center;
+
+}
+
+ 
+
+.text-center {
+
+    /*font: poppins-regular;
+
+    color: #2E2E2E;
+
+    font-weight: 600px;
+
+    size: 64px;
+
+    line-height: 88px;
+
+    text-align: justify;*/
+
+    color: var(--text-title, #2E2E2E);
+
+    text-align: center;
+
+    font: Poppins-regular;
+
+    font-size: 64px;
+
+    font-style: normal;
+
+    font-weight: 600;
+
+    line-height: 88px;
+
+    margin-left: 350px;
+
+    position: relative;
+
+}
+
+ 
+
+ 
+
+
+.footer {
+
+    background-color: #B00000;
+
+    color: white;
+
+    margin-top: 150px;
+
+    padding-left: 100px;
+
+    font-weight: 50;
+
+}
+
+ 
+
+.text-muted {
+
+    color: #E6E6E6 !important;
+
+}
+
+ 
+
+footer h5 {
+
+    color: #FFFFFF;
+
+    font-size: 18px;
+
+    padding: 15px 0;
+
+    margin-left: 100px;
+
+}
+
+ 
+
+footer a {
+
+    display: inline-block;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 16px;
+
+    margin-left: 100px;
+
+    color: #E6E6E6;
+
+    line-height: 32px;
+
+    margin-bottom: 18px;
+
+ 
+
+}
+
+ 
+
+.paragraph {
+
+    color: #E6E6E6;
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    width: 269px;
+
+    /* Body/16px Regular */
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 16px;
+
+    font-style: normal;
+
+    line-height: 32px;
+
+ 
+
+}
+ 
+
+/* copyright-text */
+
+.copyright {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 16px;
+
+    font-style: normal;
+
+    line-height: 32px;
+
+    padding-bottom: 60px;
+
+ 
+
+}
+
+
+    
+
+
+
+
+
+
+
+
